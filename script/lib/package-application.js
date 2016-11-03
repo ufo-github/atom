@@ -18,7 +18,7 @@ module.exports = function () {
     'app-bundle-id': 'com.github.atom',
     'app-copyright': `Copyright © 2014-${(new Date()).getFullYear()} GitHub, Inc. All rights reserved.`,
     'app-version': CONFIG.appMetadata.version,
-    'arch': process.platform === 'win32' ?  process.arch : 'x64', // Windows has 32-bit and 64-bit versions
+    'arch': process.arch,
     'asar': {unpack: buildAsarUnpackGlobExpression()},
     'build-version': CONFIG.appMetadata.version,
     'download': {cache: CONFIG.electronDownloadPath},
